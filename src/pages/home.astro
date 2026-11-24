@@ -1,0 +1,255 @@
+
+---
+import "../styles/global.css";
+---
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="مال: برنامج محاسبة سحابي للفواتير والمخزون والتقارير، يعمل من أي جهاز.">
+<link rel="icon" type="image/png" href="/maal0.ico">
+<meta name="theme-color" content="#0f766e">
+<title>مال – برنامج المحاسبة السحابي</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="inv" viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6zM14 3v5h5M9 13h6M9 17h6"/></symbol>
+  <symbol id="box" viewBox="0 0 24 24"><path d="M3 7l9-4 9 4-9 4zM3 7v10l9 4 9-4V7M12 11v10"/></symbol>
+  <symbol id="chart" viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></symbol>
+  <symbol id="dev" viewBox="0 0 24 24"><path d="M3 5h14v10H3zM8 19h4M19 9h3v10h-3z"/></symbol>
+  <symbol id="lock" viewBox="0 0 24 24"><path d="M5 11h14v10H5zM8 11V7a4 4 0 018 0v4"/></symbol>
+  <symbol id="users" viewBox="0 0 24 24"><path d="M9 11a3 3 0 100-6 3 3 0 000 6M3 20c0-3 3-5 6-5s6 2 6 5M17 11a3 3 0 100-6M21 20c0-2-1.5-3.5-3.5-4.3"/></symbol>
+  <symbol id="shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6zM9 12l2 2 4-4"/></symbol>
+  <symbol id="cloud" viewBox="0 0 24 24"><path d="M7 18a4 4 0 010-8 5.5 5.5 0 0110.5 1.5A3.25 3.25 0 0117 18z"/></symbol>
+  <symbol id="chat" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></symbol>
+  <symbol id="mail" viewBox="0 0 24 24"><path d="M3 6h18v12H3zM3 7l9 6 9-6"/></symbol>
+  <symbol id="ok" viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></symbol>
+</svg>
+
+<nav>
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="مال"><img class="logo-l" alt="مال" width="92" height="128" src="/images/Maal logo.webp"></a>
+    <div class="links"><a href="#features">المميزات</a><a href="#steps">كيف يعمل</a><a href="#security">الأمان</a><a href="#pricing">الأسعار</a><a href="#faq">الأسئلة</a></div>
+    <button class="tg" id="tg" type="button" aria-label="تبديل الوضع الفاتح والداكن">☾</button>
+    <button class="tg" id="lg" type="button" aria-label="English">EN</button>
+    <a class="btn btn-p" href="#demo">ابدأ مجاناً</a>
+    <button class="tg mb" id="mb" type="button" aria-label="القائمة" aria-expanded="false">☰</button>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="tag"> SaaS </span>
+      <h1>حساباتك <em>بوضوح تام</em>،<br>من أي مكان</h1>
+      <p class="lead">مال يجمع الفواتير والمخزون والمصروفات والتقارير في مكان واحد. بدون تثبيت وبدون تعقيد، وتبدأ خلال دقائق.</p>
+      <br><span class="Appr">معتمد من</span>
+      <div class="trust">
+  <span class="tw">
+  <img class="tl logo-light" src="/images/ZATCA.webp" alt="ZATCA / هيئة الزكاة والضريبة والجمارك">
+  <img class="tl logo-dark" src="/images/ZATCA-dark.webp" alt="ZATCA / هيئة الزكاة والضريبة والجمارك">
+</span>
+
+<span class="tw">
+  <img class="tl logo-light" src="/images/Fatoora.webp" alt="Fatoora / فاتورة">
+  <img class="tl logo-dark" src="/images/Fatoora-dark.webp" alt="Fatoora / فاتورة">
+</span>
+</div>
+      <div class="cta">
+        <a class="btn btn-p" href="#demo">جرّب مجاناً 14 يوماً</a>
+        <a class="btn btn-o" href="#features">اكتشف المميزات</a>
+      </div>
+      <p class="note">لا حاجة لبطاقة ائتمانية</p>
+    </div>
+  </div>
+</header>
+
+<section id="preview">
+  <div class="wrap">
+    <div class="title rv"><h2>شاهد البرنامج من الداخل</h2><p>واجهة عربية واضحة تعرف طريقك فيها من أول مرة.</p></div>
+    <div class="row b rv">
+      <div><span class="tag">لوحة التحكم</span><h3>كل أنظمتك من شاشة واحدة</h3><p>المحاسبة والمبيعات والمخازن ونقاط البيع والتقارير، مع متابعة إيراد الشهر وشاشاتك المفضلة.</p></div>
+<div class="shot">
+  <div class="bar"><i></i><i></i><i></i></div>
+
+  <img class="shot-ar"
+       src="/images/Dashboard-ar.webp"
+       width="1500" height="739"
+       alt="شاشة لوحة التحكم باللغة العربية">
+
+  <img class="shot-en"
+       src="/images/Dashboard-en.webp"
+       width="1500" height="739"
+       alt="Dashboard screen in EN">
+</div>
+    </div>
+    <hr>
+    <div class="row rv">
+<div class="shot">
+  <div class="bar"><i></i><i></i><i></i></div>
+  <img class="shot-ar"
+       loading="lazy"
+       src="/images/Sale inv-ar.webp"
+       width="1400" height="695"
+       alt="الواجهة الرئيسية لنظام مال">
+
+  <img class="shot-en"
+       loading="lazy"
+       src="/images/Sale inv-en.webp"
+       width="1400" height="695"
+       alt="Mal system main interface">
+</div>      <div><span class="tag">البيع المباشر</span><h3>فاتورة بيع في ثوانٍ</h3><p>ابحث عن الصنف أو امسح الباركود، وطبّق الخصم بالمبلغ أو بالنسبة، وشاهد الإجمالي فوراً قبل الدفع.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="features" class="alt">
+  <div class="wrap">
+    <div class="title rv"><h2>كل ما تحتاجه لإدارة أعمالك</h2><p>أدوات بسيطة توفر وقتك وتعطيك رؤية واضحة لوضعك المالي.</p></div>
+    <div class="grid">
+      <div class="card rv"><div class="ic"><svg class="i"><use href="#inv"/></svg></div><h3>فواتير احترافية</h3><p>أنشئ فواتير وعروض أسعار بشعارك وأرسلها للعميل بنقرة واحدة.</p></div>
+      <div class="card rv"><div class="ic"><svg class="i"><use href="#box"/></svg></div><h3>إدارة المخزون</h3><p>تابع الكميات والمستودعات مع تنبيهات فورية عند قرب النفاد.</p></div>
+      <div class="card rv"><div class="ic"><svg class="i"><use href="#chart"/></svg></div><h3>تقارير فورية</h3><p>أرباح وخسائر وميزانية وتقارير مبيعات جاهزة في ثوانٍ.</p></div>
+      <div class="card rv"><div class="ic"><svg class="i"><use href="#dev"/></svg></div><h3>من أي جهاز</h3><p>يعمل على الحاسوب والجوال والتابلت دون تثبيت أي برنامج.</p></div>
+      <div class="card rv"><div class="ic"><svg class="i"><use href="#lock"/></svg></div><h3>أمان ونسخ احتياطي</h3><p>بياناتك مشفّرة ومحفوظة تلقائياً، مع صلاحيات لكل مستخدم.</p></div>
+      <div class="card rv"><div class="ic"><svg class="i"><use href="#users"/></svg></div><h3>عمل جماعي</h3><p>أضف فريقك ومحاسبك وحدّد ما يستطيع كل واحد منهم رؤيته وتعديله.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="steps">
+  <div class="wrap">
+    <div class="title rv"><h2>ابدأ في ثلاث خطوات</h2><p>بدون تعقيد وبدون خبرة تقنية.</p></div>
+    <div class="steps">
+      <div class="rv"><div class="num">1</div><h3>أنشئ حسابك</h3><p>سجّل ببريدك الإلكتروني في أقل من دقيقة.</p></div>
+      <div class="rv"><div class="num">2</div><h3>أضف بياناتك</h3><p>استورد العملاء والمنتجات من ملف Excel بسهولة.</p></div>
+      <div class="rv"><div class="num">3</div><h3>ابدأ العمل</h3><p>أصدر فواتيرك وتابع تقاريرك من لوحة واحدة.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="security" class="alt">
+  <div class="wrap">
+    <div class="title rv"><h2>بياناتك في أيدٍ أمينة</h2><p>حساباتك أمانة عندنا، ولذلك بنينا مال على أسس تحمي بياناتك وتبقيها متاحة دائماً.</p></div>
+    <div class="grid">
+      <div class="card rv"><div class="ic"><svg class="i"><use href="#shield"/></svg></div><h3>اتصال مشفّر</h3><p>تنتقل بياناتك بين جهازك والخدمة عبر اتصال مشفّر.</p></div>
+      <div class="card rv"><div class="ic"><svg class="i"><use href="#cloud"/></svg></div><h3>نسخ احتياطي تلقائي</h3><p>تُحفظ نسخ من بياناتك تلقائياً حتى لا تفقدها عند أي طارئ.</p></div>
+      <div class="card rv"><div class="ic"><svg class="i"><use href="#users"/></svg></div><h3>صلاحيات دقيقة</h3><p>حدّد لكل مستخدم ما يراه ويعدّله داخل النظام.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="wrap">
+    <div class="title rv"><h2>خطط تناسب حجم عملك</h2><p>اشترك شهرياً وألغِ في أي وقت.</p></div>
+    <div class="plans">
+      <div class="plan rv"><h3>الأساسية</h3><div class="price">49 <small>ر.س / شهرياً</small></div>
+        <ul><li><svg class="i"><use href="#ok"/></svg>مستخدم واحد</li><li><svg class="i"><use href="#ok"/></svg>100 فاتورة شهرياً</li><li><svg class="i"><use href="#ok"/></svg>تقارير أساسية</li></ul>
+        <a class="btn btn-o" href="#">اشترك الآن</a></div>
+      <div class="plan hot rv"><h3>الاحترافية</h3><div class="price">129 <small>ر.س / شهرياً</small></div>
+        <ul><li><svg class="i"><use href="#ok"/></svg>حتى 5 مستخدمين</li><li><svg class="i"><use href="#ok"/></svg>فواتير غير محدودة</li><li><svg class="i"><use href="#ok"/></svg>إدارة المخزون</li><li><svg class="i"><use href="#ok"/></svg>دعم ذو أولوية</li></ul>
+        <a class="btn btn-p" href="#">اشترك الآن</a></div>
+      <div class="plan rv"><h3>المؤسسات</h3><div class="price">299 <small>ر.س / شهرياً</small></div>
+        <ul><li><svg class="i"><use href="#ok"/></svg>مستخدمون غير محدودين</li><li><svg class="i"><use href="#ok"/></svg>فروع متعددة</li><li><svg class="i"><use href="#ok"/></svg>ربط عبر API</li><li><svg class="i"><use href="#ok"/></svg>مدير حساب خاص</li></ul>
+        <a class="btn btn-o" href="#">تواصل معنا</a></div>
+    </div>
+  </div>
+</section>
+<section id="clients">
+  <div class="wrap">
+    <div class="title"><h2>عملاؤنا</h2><p>كل تجربة مع عملائنا كانت خطوة نحو تطوير نظام محاسبي أفضل لواقع المشاريع السعودية</p></div>
+    <div class="clogos">
+      <div class="slot"><img class="tl" loading="lazy" src="/Subimages/1.webp" alt="Sun Marketing"></div>
+      <div class="slot"><img class="tl" loading="lazy" src="/Subimages/2.webp" alt="HRC"></div>
+      <div class="slot"><img class="tl" loading="lazy" src="/Subimages/3.webp" alt="Shareek"></div>
+      <div class="slot"><img class="tl" loading="lazy" src="/Subimages/4.webp" alt="Hasaad"></div>
+      <div class="slot"><img class="tl" loading="lazy" src="/Subimages/5.webp" alt="Hasaad Development"></div>
+      <div class="slot"><img class="tl" loading="lazy" src="/Subimages/6.webp" alt="Hasaad Development"></div>
+      <div class="slot"><img class="tl" loading="lazy" src="/Subimages/7.webp" alt="Hasaad Development"></div>
+      <div class="slot"><img class="tl" loading="lazy" src="/Subimages/8.webp" alt="Hasaad Development"></div>
+    </div>
+  </div>
+</section>
+<section id="faq" class="alt">
+  <div class="wrap">
+
+    <div class="title rv"><h2>أسئلة يسألها العملاء</h2><p>لم تجد جوابك؟ راسلنا وسنساعدك.</p></div>
+    <div class="faq">
+      <details class="rv"><summary>هل أحتاج إلى تثبيت برنامج؟</summary><p>لا، مال يعمل من المتصفح على الحاسوب والجوال والتابلت، فتبدأ العمل مباشرة بعد إنشاء حسابك.</p></details>
+      <details class="rv"><summary>هل أستطيع نقل بياناتي من ملفات Excel؟</summary><p>نعم، يمكنك استيراد العملاء والمنتجات من ملف Excel عند بدء الاستخدام.</p></details>
+      <details class="rv"><summary>هل يمكن لأكثر من شخص استخدام الحساب؟</summary><p>نعم، يختلف عدد المستخدمين حسب الخطة، ويمكنك تحديد صلاحيات كل مستخدم.</p></details>
+      <details class="rv"><summary>هل أستطيع إلغاء الاشتراك؟</summary><p>نعم، الاشتراك شهري ويمكنك إلغاؤه في أي وقت.</p></details>
+      <details class="rv"><summary>كيف أتواصل مع الدعم؟</summary><p>تواصل معنا عبر واتساب بالزر الظاهر في الصفحة، وسنرد عليك في أقرب وقت.</p></details>
+    </div>
+  </div>
+</section>
+
+<section id="demo">
+  <div class="wrap">
+    <div class="demo rv">
+      <div><h2>جرّب مال مع فريقنا</h2><p>اترك بياناتك وسنتواصل معك عبر واتساب لتجهيز تجربتك المجانية وشرح البرنامج لنشاطك.</p></div>
+      <form id="demoForm">
+        <label><span>الاسم <i class="req">*</i></span><input name="nm" required pattern=".*\S.*" autocomplete="name" placeholder="اكتب اسمك"></label>
+        <div class="fld" id="phoneField">
+          <label for="phn"><span>رقم الجوال <i class="req">*</i></span></label>
+          <div class="pf" dir="ltr">
+            <button type="button" class="cc" id="cc" aria-haspopup="listbox" aria-expanded="false" aria-label="اختر رمز الدولة"><span id="ccFlag"></span><span id="ccCode" dir="ltr">+966</span><svg class="i" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button>
+            <input id="phn" name="phn" type="tel" required inputmode="tel" autocomplete="tel-national" placeholder="5xxxxxxxx">
+            <input type="hidden" name="ph">
+            <div class="cl" id="ccList" hidden>
+              <input class="cs" id="ccSearch" type="search" autocomplete="off" placeholder="ابحث عن دولة أو رمز">
+              <ul id="ccItems" role="listbox"></ul>
+            </div>
+          </div>
+        </div>
+        <label>البريد الإلكتروني (اختياري)<input name="em" type="email" autocomplete="email" placeholder="name@Maal.com" dir="ltr"></label>
+        <label><span>نوع النشاط <i class="req">*</i></span><select name="bt" required><option value="" disabled selected>اختر نوع النشاط</option><optgroup label="تجارة وتجزئة"><option>متجر تجزئة</option><option>سوبرماركت وبقالة</option><option>تجارة جملة وتوزيع</option><option>متجر إلكتروني</option><option>إلكترونيات وجوالات</option><option>ملابس وأزياء</option><option>عطور ومستحضرات تجميل</option><option>أثاث ومفروشات</option><option>مكتبة وقرطاسية</option><option>هدايا وورود</option><option>مستلزمات منزلية</option><option>ألعاب ومستلزمات أطفال</option></optgroup><optgroup label="أغذية ومشروبات"><option>مطعم</option><option>كافيه ومقهى</option><option>مخبز وحلويات</option><option>كاترينج وتموين</option><option>محمصة وبهارات</option><option>مصنع أغذية</option><option>متجر خضار وفواكه</option><option>ملحمة ولحوم</option></optgroup><optgroup label="صحة وجمال"><option>عيادة أو مركز طبي</option><option>عيادة أسنان</option><option>صيدلية</option><option>مختبر طبي</option><option>صالون وعناية</option><option>مركز تجميل وسبا</option><option>نادٍ رياضي ولياقة</option><option>نظارات وبصريات</option></optgroup><optgroup label="سيارات ونقل"><option>ورشة صيانة سيارات</option><option>قطع غيار سيارات</option><option>معرض سيارات</option><option>مغسلة سيارات</option><option>تأجير سيارات</option><option>نقل وشحن وخدمات لوجستية</option><option>مكتب استقدام وتخليص</option></optgroup><optgroup label="صناعة ومقاولات"><option>مقاولات وبناء</option><option>مصنع وصناعة</option><option>أدوات ومواد بناء</option><option>كهرباء وسباكة</option><option>مصنع أثاث ونجارة</option><option>حدادة وألمنيوم</option><option>مطبعة</option><option>صيانة أجهزة ومعدات</option><option>زراعة ومزرعة</option></optgroup><optgroup label="خدمات مهنية وتجارية"><option>مكتب محاسبة</option><option>مكتب محاماة واستشارات</option><option>مكتب عقاري</option><option>تسويق ودعاية</option><option>تصميم وطباعة</option><option>تصوير وإنتاج</option><option>خدمات رقمية وبرمجة</option><option>تنظيف وصيانة منشآت</option><option>مغسلة ملابس</option><option>تأمين ووساطة</option></optgroup><optgroup label="تعليم وتدريب"><option>مدرسة أو معهد</option><option>مركز تدريب</option><option>حضانة</option><option>مركز دروس خصوصية</option></optgroup><optgroup label="سياحة وضيافة وفعاليات"><option>فندق وشقق مفروشة</option><option>مكتب سياحة وسفر</option><option>تنظيم فعاليات وحفلات</option><option>قاعات أفراح ومناسبات</option></optgroup><optgroup label="أخرى"><option>جمعية أو منظمة غير ربحية</option><option>جهة حكومية أو شبه حكومية</option></optgroup><option value="other">نشاط آخر (غير موجود في القائمة)</option></select></label>
+        <label id="otherWrap" hidden><span>اكتب نشاطك <i class="req">*</i></span><input name="ot" placeholder="مثال: مصنع عبوات بلاستيكية"></label>
+        <label>تفاصيل إضافية (اختياري)<textarea name="msg" rows="3" placeholder="مثال: عدد الفروع أو ما تحتاجه من البرنامج"></textarea></label>
+        <div class="btns">
+          <button class="btn btn-p" type="submit" value="wa"><svg class="i" style="fill:currentColor;stroke:none"><use href="#chat"/></svg>إرسال عبر واتساب</button>
+          <button class="btn btn-o" type="submit" value="mail"><svg class="i"><use href="#mail"/></svg>إرسال عبر البريد</button>
+        </div>
+        <p class="note" style="text-align:center;font-size:13px;margin:0">سيُفتح واتساب أو تطبيق البريد برسالة جاهزة، وتؤكد الإرسال بنفسك.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<a class="fab" id="fab" href="#" target="_blank" rel="noopener" aria-label="تواصل عبر واتساب"><svg class="i"><use href="#chat"/></svg></a>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div class="brand">
+        <a class="logo" id="flogo" href="#top" aria-label="مال"></a>
+        <p>برنامج محاسبة سحابي لإدارة الفواتير والمخزون والتقارير من أي مكان وبكل سهولة.</p>
+        <a class="btn btn-p" href="#demo">ابدأ مجاناً</a>
+      </div>
+      <div class="fcol">
+        <h4>روابط الصفحة</h4>
+        <a href="#features">المميزات</a>
+        <a href="#steps">كيف يعمل</a>
+        <a href="#security">الأمان</a>
+        <a href="#pricing">الأسعار</a>
+        <a href="#faq">الأسئلة</a>
+        <a href="#demo">اطلب تجربتك</a>
+      </div>
+      <div class="fcol">
+        <h4>تواصل معنا</h4>
+        <a id="fwa" href="#" target="_blank" rel="noopener">واتساب</a>
+        <a id="fmail" href="#">البريد الإلكتروني</a>
+      </div>
+    </div>
+    <div class="fbar"><span>© 2026 مال. جميع الحقوق محفوظة.</span><span><a href="#">سياسة الخصوصية</a> · <a href="#">الشروط والأحكام</a></span></div>
+  </div>
+</footer>
+<script>
+  import "../scripts/main.js";
+</script>
+</body>
+</html>
